@@ -1,0 +1,890 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    padding: 30px 50px 0 0;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+.cosita {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex; /* Mostrar el ícono de menú */
+    }
+
+    .cosita {
+        display: none; /* Ocultar la lista de enlaces */
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 90%;
+        text-align: center;
+    }
+
+    .cosita a {
+        margin: 10px 0;
+    }
+}
+
+
+
+nav a {
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+    margin-right: 10px;
+    
+    
+}
+
+.icono {
+    display: block;
+    z-index: 100000000;
+    animation: moverIzquierda 1s ease-in;
+}
+
+header {
+    background: #DA4453;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89216B, #DA4453);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89216B, #DA4453);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: auto;
+    padding: 48px;
+    width: 100%;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+img {
+    margin-top: 50px;
+    display: block;
+    height: 450px;
+    object-fit: cover;
+    animation: arriba 1s ease-in;
+}
+
+.textos {
+    width: 90%;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.textos h1 {
+    font-size: 80px;
+    text-align: center;
+    animation: moverDerecha 1s ease-in;
+
+}
+
+.textos h2 {
+    font-size: 30px;
+    text-align: center;
+    animation: moverIzquierda 1s ease-in;
+}
+
+.textos a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    width: 150px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0;
+    animation: arriba 1s ease-in;
+
+}
+
+.wave {
+    height: 100px;
+    width: 100%;
+    background: #DA4453;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89216B, #DA4453);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89216B, #DA4453);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.enlaces {
+    position: fixed;
+    display: flex;
+    top: 0;
+    background: #000;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    right: 0;
+    flex-direction: column;
+    width: 100%;
+    transition: all 1s ease;
+    background: #bc4e9c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f80759, #bc4e9c);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.uno {
+
+    -webkit-clip-path: circle(0% at 0 0);
+    clip-path: circle(0% at 0 0);
+
+}
+
+.dos {
+    -webkit-clip-path: circle(150% at 0 0);
+    clip-path: circle(150% at 0 0);
+
+}
+
+.cosita{
+    right: 0;
+}
+
+.cosita > a {
+    color: #fff;
+    font-weight: 300;
+  
+}
+
+
+@keyframes moverIzquierda {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverDerecha {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes arriba {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@media screen and (max-width:1000px) {
+    img {
+        height: 400px;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    img {
+        height: 370px;
+    }
+
+    .textos h1 {
+        font-size: 70px;
+       
+    }
+
+    .textos h2 {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    img {
+        height: 250px;
+    }
+
+    .textos h1 {
+        font-size: 40px;
+        text-align: center;
+        margin-left: 20px;
+    }
+
+    .textos h2 {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+    .container {
+        width: 100%;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    .textos {
+        width: 100%;
+        text-align: center;
+       
+    }
+
+    .textos h1 {
+        font-size: 43px;
+        
+    }
+
+    .contact-card{
+        margin-top:10%;
+        margin-right:13%;
+        display: block;
+        justify-content: center;
+        
+    }
+
+  
+}
+
+@media screen and (max-width:340px) {
+    .container {
+        width: 100%;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    img {
+        height: 200px;
+    }
+
+    .textos h1 {
+        font-size: 35px;
+        margin-left: 20px;
+    }
+
+    .textos a {
+        width: 120px;
+    }
+
+    .textos h2 {
+        font-size: 15px;
+    }
+
+     .contact-card{
+        margin-top:10%;
+        margin-right:13%;
+        display: block;
+        justify-content: center;
+        
+    }
+
+ 
+}
+
+
+h1 {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 800;
+}
+
+form {
+    width: 30%;
+    background: #fff;
+    padding: 10px 0;
+    border-radius: 40px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+}
+
+.form {
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo {
+    position: relative;
+    margin: 45px;
+}
+
+input,
+textarea {
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    color: rgb(94, 93, 93);
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+    position: absolute;
+    top: -14px;
+    font-size: 12px;
+    color: #2196F3;
+}
+
+label {
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+
+}
+
+input:focus~.barra::before,
+textarea:focus~.barra::before {
+    width: 100%;
+}
+
+.barra {
+    position: relative;
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+.barra::before {
+    content: '';
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #6A82FB, #FC5C7D);
+    transition: 0.3s ease all;
+    left: 0%;
+}
+
+button {
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6A82FB, #FC5C7D);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: block;
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:1500px) {
+    form {
+        width: 50%;
+        height: 70%;
+        margin-top:50px ;
+    }
+
+    .contact-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 40px 5%;
+    }
+
+}
+
+
+@media screen and (max-width:1100px) {
+    form {
+        width: 50%;
+        height: 75%;
+        margin-top:50px ;
+    }
+
+   
+}
+
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+
+    form {
+        width: calc(90% - 20px); /* Ajustar el ancho en situaciones de zoom */
+        max-width: none; /* Evitar tamaño máximo en zoom */
+    }
+    /* Agregar estilos para el formulario cuando el teclado está activo */
+    form.active {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:600px) {
+    form {
+        width: 80%;
+    }
+
+
+    form.active {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    h1 {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 800;
+}
+form {
+    background: #fff;
+    width: 80%;
+    max-width: 400px;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    margin: 0 auto;
+    position: relative; /* Agregado */
+}
+
+.form {
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo {
+    position: relative;
+    margin: 45px;
+}
+
+
+
+input,
+textarea {
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    color: rgb(94, 93, 93);
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+    position: absolute;
+    top: -14px;
+    font-size: 12px;
+    color: #2196F3;
+}
+
+label {
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+
+}
+
+
+input:focus~.barra::before,
+textarea:focus~.barra::before {
+    width: 100%;
+}
+
+.barra {
+    position: relative;
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+.barra::before {
+    content: '';
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #6A82FB, #FC5C7D);
+    transition: 0.3s ease all;
+    left: 0%;
+}
+
+button {
+    background: #FC5C7D;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6A82FB, #FC5C7D);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: block;
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+    
+}
+
+@media screen and (max-width:450px) {
+    form {
+        width: 90%;
+        height: 65%;
+    }
+    form {
+        width: calc(90% - 20px); /* Ajustar el ancho en situaciones de zoom */
+        max-width: none; /* Evitar tamaño máximo en zoom */
+    }
+
+    form.active {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 10px 0;
+        font-weight: 800;
+    }
+    
+    form .grupo {
+        position: relative;
+        margin: 30px;
+    }
+
+    form h1{
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+    
+    input,
+    textarea {
+        background: none;
+        color: #c6c6c6;
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid var(--colorTextos);
+        resize: none;
+    }
+    
+    input:focus,
+    textarea:focus {
+        outline: none;
+        color: rgb(94, 93, 93);
+    }
+    
+    input:focus~label,
+    input:valid~label,
+    textarea:focus~label,
+    textarea:valid~label {
+        position: absolute;
+        top: -14px;
+        font-size: 12px;
+        color: #2196F3;
+    }
+    
+    label {
+        color: var(--colorTextos);
+        font-size: 16px;
+        position: absolute;
+        left: 5px;
+        top: 10px;
+        transition: 0.5s ease all;
+        pointer-events: none;
+    
+    }
+    
+    
+    input:focus~.barra::before,
+    textarea:focus~.barra::before {
+        width: 100%;
+    }
+    
+    .barra {
+        position: relative;
+        display: block;
+        width: 100%;
+        border-bottom: 2px solid black;
+    }
+    
+    .barra::before {
+        content: '';
+        height: 2px;
+        width: 0%;
+        bottom: 0;
+        position: absolute;
+        background: linear-gradient(to right, #6A82FB, #FC5C7D);
+        transition: 0.3s ease all;
+        left: 0%;
+    }
+    
+    button {
+        background: #FC5C7D;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #6A82FB, #FC5C7D);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        display: block;
+        width: 100px;
+        height: 40px;
+        border: none;
+        color: #fff;
+        border-radius: 4px;
+        font-size: 16px;
+        margin: 10px auto;
+        cursor: pointer;
+    }
+    
+}
+
+@media screen and (max-width:300px) {
+    form {
+        width: 90%;
+    }
+
+    
+}
+
+
+
+/* Estilos de las tarjetas de contacto */
+.contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 5%;
+}
+
+.contact-card {
+    flex: 0 1 300px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    background-color: #4267B2;
+    margin-left: 60px;
+}
+
+.contact-card img {
+    width: 200px;
+    max-width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+    margin-left: 35px;
+}
+
+.contact-card h3 {
+    font-size: 20px;
+}
+
+.contact-card p {
+    font-size: 16px;
+}
+
+/* Estilos del botón de contacto */
+.contact-button.con {
+    display: block;
+    margin-top: 20px;
+    width: 200px;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-button.con:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .contact-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px;
+        box-sizing: border-box; 
+        margin-right: 85px;
+    }
+    
+   
+}
+@media (max-width: 340px) {
+    .contact-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px;
+        box-sizing: border-box; 
+        margin-right: 50px;
+    }
+    
+   
+}
+@media (max-width: 200px) {
+    .contact-card {
+        flex-basis: 100%;
+        max-width: 100%;
+       
+
+    }
+    .contact-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px;
+        box-sizing: border-box; 
+        margin-right: 50px;
+    }
+
+    .contact-cards {
+        justify-content: center;
+    }
+}
+
+
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex; /* Mostrar el ícono de menú */
+    }
+
+    .cosita {
+        display: none; /* Ocultar la lista de enlaces */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        text-align: center;
+        z-index: 1000; /* Asegurar que el menú sea visible sobre otros elementos */
+    }
+
+    .cosita.armijos {
+        display: flex; /* Mostrar la lista de enlaces cuando el menú está activo */
+    }
+
+    .cosita a {
+        margin: 10px 0;
+        font-size: 18px; /* Tamaño de fuente para los enlaces */
+        color: #fff; /* Color de fuente para los enlaces */
+    }
+}

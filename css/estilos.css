@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Merriweather:ital,wght@0,700;1,700&family=Oswald&family=Roboto:wght@300&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Merriweather:ital,wght@0,700;1,700&family=Open+Sans:wght@500&family=Oswald&family=Roboto:wght@300&family=Vina+Sans&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header.agropecuaria {
+    background: linear-gradient(to bottom, #ffffff, #ff0000);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+header.agropecuaria {
+    height: 850px;
+}
+
+.contenido-textos {
+    max-width: 50%;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.textos-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.san {
+    color: black;
+    font-size: 10x;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    margin: 20px;
+    text-align: left;
+    margin-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.san-titulo {
+    color: red;
+    font-size: 28px;
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    margin: 10px;
+    margin-top: 50px;
+}
+
+.titulo-congreso {
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 260px;
+    left: 100px;
+    margin: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.sub-titulo {
+    color: blue;
+    font-size: 25px;
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    margin: 10px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.imagenes-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.imagenes-card img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0.5rem 0;
+    margin-left: 120px;
+    border: 2px solid orange;
+}
+
+.uno {
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    margin: 10px;
+    max-width: 350px;
+    height: 200px;
+}
+
+.dos {
+    position: absolute;
+    top: 35%;
+    left: 58%;
+    margin: 10px;
+    max-width: 350px;
+    height: 200px;
+}
+
+.tres {
+    position: absolute;
+    top: 60%;
+    left: 48%;
+    margin: 10px;
+    max-width: 350px;
+    height: 200px;
+    z-index: 2;
+}
+
+.cuatro {
+    position: absolute;
+    top: 88%;
+    left: 54%;
+    margin: 10px;
+    max-width: 350px;
+    height: 200px;
+    z-index: 1;
+}
+
+.cinco {
+    position: absolute;
+    top: 110%;
+    left: 35%;
+    margin: 10px;
+    max-width: 350px;
+    height: 200px;
+}
+
+.seis {
+    position: absolute;
+    top: 118%;
+    left: 56%;
+    margin: 10px;
+    max-width: 350px;
+    height: 200px;
+
+}
+
+
+.agro {
+    position: absolute;
+    top: 150%;
+    left: 45%;
+    margin: 10px;
+    max-width: 400px;
+    height: 400px;
+}
+
+
+main {
+    background: linear-gradient(to bottom, #00ff00, #ffffff);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+
+.contenedor-temario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 100%;
+    margin-left: 0px;
+    height: 800px;
+}
+
+.titulo {
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 1rem;
+    text-align: left;
+    font-size: 40px;
+}
+
+.titulo_info {
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 1rem;
+    text-align: left;
+    font-size: 70px;
+    color: rgb(255, 8, 0);
+    margin-top: 60px;
+    margin-left: 15%;
+}
+
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 8px;
+    padding: 5px;
+    text-align: left;
+}
+
+
+
+.titulo+h2 {
+    font-family: 'Comfortaa', sans-serif;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.info {
+    position: absolute;
+    top: 210%;
+    right: 5%;
+    margin: 40px;
+    padding: 20px;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+.info h3 {
+    font-family: 'Comfortaa', cursive;
+}
+
+.info h4 {
+    font-size: 1.2rem;
+    font-family: 'Comfortaa', cursive;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #db5406;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    width: 200px;
+    text-align: center;
+    margin-left: 23%;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        background-image: url('../img/fondo_c.jpg');
+        background-size: 100% 98%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+
+    header.agropecuaria,
+    .contenido-textos,
+    main,
+    .contenedor-temario,
+    .titulo,
+    .titulo_info,
+    h3,
+    h4,
+    h2,
+    .titulo+h2,
+    .ocultar {
+        display: none;
+    }
+
+
+    .button {
+        display: block;
+        position: fixed;
+        bottom: 10px;
+        left: 25%;
+        transform: translateX(-100%);
+        padding: 10px 20px;
+        background-color: #0662db;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        margin-bottom: 10px;
+        width: 150px;
+        font-family: 'Comfortaa', sans-serif;
+        margin-left: 21%;
+    }
+
+}
+
+
+@media (min-width: 1920px) {
+    header.agropecuaria {
+        background: linear-gradient(to bottom, #ffffff, #ff0000);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    header.agropecuaria {
+        height: 1000px;
+    }
+
+    .contenido-textos {
+        max-width: 50%;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+
+    .textos-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin: 2rem 0;
+    }
+
+    .san {
+        color: black;
+        font-size: 20x;
+        position: absolute;
+        top: 20px;
+        left: 100px;
+        margin: 20px;
+        text-align: left;
+        margin-top: 20px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .san-titulo {
+        color: red;
+        font-size: 28px;
+        position: absolute;
+        top: 70px;
+        left: 100px;
+        margin: 10px;
+        margin-top: 50px;
+    }
+
+    .titulo-congreso {
+        color: black;
+        font-size: 40px;
+        position: absolute;
+        top: 200px;
+        left: 120px;
+        margin: 10px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .sub-titulo {
+        color: blue;
+        font-size: 25px;
+        position: absolute;
+        top: 54%;
+        left: 10%;
+        margin: 10px;
+        text-align: left;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+    .imagenes-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .imagenes-card img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        margin: 0.5rem 0;
+        margin-left: 120px;
+        border: 2px solid orange;
+    }
+
+    .uno {
+        position: absolute;
+        top: 10px;
+        left: 45%;
+        margin: 10px;
+        max-width: 400px;
+        height: 250px;
+    }
+
+    .dos {
+        position: absolute;
+        top: 20%;
+        left: 58%;
+        margin: 10px;
+        max-width: 400px;
+        height: 250px;
+    }
+
+    .tres {
+        position: absolute;
+        top: 40%;
+        left: 48%;
+        margin: 10px;
+        max-width: 400px;
+        height: 250px;
+        z-index: 2;
+    }
+
+    .cuatro {
+        position: absolute;
+        top: 64.5%;
+        left: 54%;
+        margin: 10px;
+        max-width: 400px;
+        height: 250px;
+        z-index: 1;
+    }
+
+    .cinco {
+        position: absolute;
+        top: 86%;
+        left: 37%;
+        margin: 10px;
+        max-width: 400px;
+        height: 250px;
+    }
+
+    .seis {
+        position: absolute;
+        top: 90%;
+        left: 56%;
+        margin: 10px;
+        max-width: 400px;
+        height: 250px;
+
+    }
+
+
+    .agro {
+        position: absolute;
+        top: 120%;
+        left: 50%;
+        margin: 10px;
+        max-width: 500px;
+        height: 300px;
+
+    }
+
+
+    main {
+        background: linear-gradient(to bottom, #00ff00, #ffffff);
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+
+    .contenedor-temario {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        max-width: 100%;
+        margin-left: 100px;
+        height: 900px;
+    }
+
+    .titulo {
+        font-family: 'Ubuntu', sans-serif;
+        margin-bottom: 1rem;
+        text-align: left;
+        font-size: 40px;
+    }
+
+    .titulo_info {
+        font-family: 'Nunito Sans', sans-serif;
+        margin-bottom: 1rem;
+        text-align: left;
+        font-size: 70px;
+        color: rgb(255, 8, 0);
+        margin-top: 60px;
+        margin-left: 30%;
+    }
+
+    h3 {
+        font-family: 'Ubuntu', sans-serif;
+        margin: 8px;
+        padding: 5px;
+        text-align: left;
+    }
+
+
+
+    .titulo+h2 {
+        font-family: 'Comfortaa', sans-serif;
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .info {
+        position: absolute;
+        top: 155%;
+        right: 20%;
+        margin: 40px;
+        padding: 20px;
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    .info h3 {
+        font-family: 'Comfortaa', cursive;
+    }
+
+    .info h4 {
+        font-size: 1.2rem;
+        font-family: 'Comfortaa', cursive;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #db5406;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        margin-bottom: 10px;
+        width: 200px;
+        text-align: center;
+        margin-left: 25%;
+    }
+
+    .button:hover {
+        background-color: #2980b9;
+    }
+}
